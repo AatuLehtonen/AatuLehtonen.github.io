@@ -1,0 +1,462 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  float: center;
+  background-color: #fef5e7;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1),
+    -30px 0px 40px rgba(0, 0, 0, 0.1);
+}
+.allButFooter {
+  min-height: calc(100vh - 155px);
+}
+#header {
+  background-color: #fdfefe;
+  text-align: center;
+  border-style: solid;
+  font-size: 17px;
+  height: 140px;
+  width: 100%;
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  margin: 10px;
+}
+
+nav {
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 20px;
+}
+nav ul li a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #17202a;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/*-- --------about--------- --*/
+#about {
+  padding: 20px 0px 20px 20px;
+  color: #080808;
+}
+#about .container {
+  padding: 20px 0px;
+}
+.about-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about-col-1 {
+  flex-basis: 60%;
+  font-size: 20px;
+}
+.about-col-2 {
+  flex-basis: 35%;
+}
+.about-col-2 img {
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+  right: 20px;
+  top: 70px;
+}
+.sub-title {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.tab-titles {
+  display: flex;
+  margin: 40px 0px 40px;
+}
+
+.tab-titles p {
+  font-weight: bold;
+}
+
+.tab-links {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #e67e22;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+  width: 50%;
+}
+.tab-contents ul li a {
+  color: #000000;
+  text-decoration: underline;
+}
+.tab-contents ul li {
+  list-style: none;
+  margin: 5px 0px;
+}
+.tab-contents ul li span {
+  color: #e67e22;
+  font-size: 20px;
+}
+.tab-contents {
+  display: none;
+}
+.tab-contents.active-tab {
+  display: block;
+  margin: 5px 12px;
+}
+
+/*-- -----------footer-------------- --*/
+#footer {
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  clear: both;
+  max-height: calc(100vh+40px);
+  position: relative;
+}
+.logo {
+  position: relative;
+  top: 25px;
+  vertical-align: middle;
+  padding: auto;
+}
+.footer-col-1 ul li {
+  display: block;
+  list-style: none;
+  margin: 4px 0 4px;
+}
+.footer-col-1 ul li a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 15px;
+  position: relative;
+}
+.footer-col-1 ul li a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #fadbd8;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+.footer-col-1 ul li a:hover::after {
+  width: 100%;
+}
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+.footer-col-1 {
+  padding: 10px 0px 10px 10px;
+}
+.footer-col-2 {
+  padding: 20px 0px;
+  font-size: 18px;
+}
+
+/*-- ---------Koulutus------------ --*/
+
+.sub-title h2 {
+  font-size: 24px;
+  margin: 0px 70px;
+}
+.content-list ul li {
+  position: relative;
+  left: 30px;
+  padding: 10px 0px;
+}
+.content-list ul li span {
+  color: #e67e22;
+  font-size: 16px;
+}
+.content-list ul li a {
+  color: #000000;
+}
+#koulutus .container {
+  padding: 40px 14px;
+}
+
+#koulutus .content-list {
+  padding: 10px 40px;
+}
+
+/*-- ---------Työkokemus---------- --*/
+
+.content-list {
+  padding: 30px 50px;
+}
+
+.content-list ul li {
+  position: relative;
+  left: 30px;
+  padding: 10px 0px;
+}
+.content-list ul {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.sub-title-1 h2 {
+  margin: 10px 28px;
+  padding: 0px 0px;
+}
+
+.sub-title-2 h2 {
+  margin: 10px 25px;
+}
+
+.text p {
+  padding: 30px 50px;
+  font-size: 20px;
+}
+
+/*-- ---------Harrastukset---------- */
+#harrastukset .container {
+  padding: 40px 14px;
+}
+
+#harrastukset .content-list {
+  padding: 30px 50px;
+}
+
+/*-- -----------Nyrkkeily------------ */
+
+p {
+  position: relative;
+  left: 10px;
+}
+
+#nyrkkeily .container {
+  padding: 40px 14px;
+}
+
+#nyrkkeily .content-list {
+  padding: 30px 50px;
+}
+
+/*-- ------------------Peli------------------ --*/
+
+#alert {
+  display: none;
+  border-radius: 10px;
+  padding: 47px 92px;
+  background-color: limegreen;
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 42%;
+  z-index: 10000;
+  transform: translate(-50%, -50%);
+}
+
+#alert strong {
+  font-size: 20px;
+}
+
+#alert #text {
+  font-size: 20px;
+}
+
+.closebtn {
+  position: absolute;
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 40px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+  left: 256px;
+  top: 15px;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+/*-- ------------Css for Small screen-------- --*/
+
+nav .fa-solid {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  nav .peli {
+    display: none;
+  }
+
+  .footer-col-1 .peli {
+    display: none;
+  }
+
+  nav .fa-solid {
+    display: block;
+    font-size: 30px;
+  }
+
+  nav ul {
+    background: #fae6c6;
+    position: fixed;
+    top: 0;
+    right: -202px;
+    width: 202px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 20px;
+  }
+
+  nav ul .fa-solid {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+  }
+
+  nav .fa-solid {
+    position: absolute;
+    top: 80px;
+    right: 175px;
+    cursor: pointer;
+  }
+
+  .sub-title {
+    font-size: 25px;
+  }
+
+  .logo {
+    top: -184px !important;
+    right: -229px;
+  }
+
+  .about-col-1 p {
+    left: 0px;
+  }
+
+  .about-col-2 img {
+    top: 54px;
+  }
+
+  .content-list ul li {
+    position: relative;
+    padding: 10px 33px;
+    left: 0px;
+  }
+  .tab-links {
+    margin-right: 39px;
+  }
+  .footer-row {
+    margin: 19px;
+  }
+
+  .text p {
+    position: relative;
+    padding: 0px 10px;
+  }
+
+  .sub-title-1 h2 {
+    margin: 10px 33px;
+  }
+
+  .sub-title-2 h2 {
+    margin: 10px 33px;
+  }
+
+  .about-col-2 {
+    flex-basis: 30%;
+  }
+}
+
+@media only screen and (min-width: 601) {
+  nav .peli {
+    display: none;
+  }
+
+  nav .fa-solid {
+    display: block;
+    font-size: 30px;
+  }
+
+  nav ul {
+    background: #fae6c6;
+    position: fixed;
+    top: 0;
+    right: -201px;
+    width: 202px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 2%;
+  }
+
+  nav ul .fa-solid {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+  }
+
+  nav .fa-solid {
+    position: absolute;
+    top: 80px;
+    right: 322px;
+    cursor: pointer;
+  }
+  .tab-links {
+    margin-right: 39px;
+  }
+}

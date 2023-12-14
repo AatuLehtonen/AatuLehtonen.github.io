@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+    <title>Harrastukset/Nyrkkeily</title>
+    <link rel="stylesheet" type="text/css" href="tyyli.css" />
+    <script
+      src="https://kit.fontawesome.com/bbc90b3050.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="allButFooter">
+      <!-- --------header-------- -->
+      <div id="header">
+        <div class="container">
+          <div class="header-text">
+            <h1>Portfolio</h1>
+          </div>
+          <nav>
+            <ul id="sidemenu">
+              <li><a href="index.html">Etusivu</a></li>
+              <li><a href="koulutus.html">Koulutus</a></li>
+              <li><a href="työkokemus.html">Työkokemus</a></li>
+              <li><a href="harrastukset.html">Harrastukset</a></li>
+              <li><a href="peli.html">Juoksukalja</a></li>
+              <li>
+                <a href="CV_2023.pdf" target="_blank" rel="noreferrer noopener"
+                  >CV</a
+                >
+              </li>
+              <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          </nav>
+        </div>
+      </div>
+      <div id="nyrkkeily">
+        <div class="container">
+          <div class="sub-title">
+            <h2>Nyrkkeily:</h2>
+          </div>
+          <div class="text">
+            <p>
+              Käyn nyrkkeilemässä 3 kertaa viikossa
+              <a
+                href="https://www.facebook.com/groups/128548457184390/ "
+                target="_blank"
+                rel="noreferrer noopener"
+                >Forssan nyrkkeilijät</a
+              >
+              seuran ohjaamana.<br />
+              Nyrkkeily on hyvä tapa nostaa kuntoa ja purkaa hermoja.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <div class="container">
+        <div class="footer-row">
+          <div class="footer-col-1">
+            <ul>
+              <li><a href="index.html">Etusivu</a></li>
+              <li><a href="koulutus.html">Koulutus</a></li>
+              <li><a href="työkokemus.html">Työkokemus</a></li>
+              <li><a href="harrastukset.html">Harrastukset</a></li>
+              <li><a href="peli.html" class="peli">Juoksukalja</a></li>
+              <li>
+                <a href="CV_2023.pdf" target="_blank" rel="noreferrer noopener"
+                  >CV</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col-2">
+            <p>
+              Yhteystiedot:<br />
+              aatulehtonen2002@gmail.com<br />
+              0449925389
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <img src="koulutushaku.jpg" width="100" height="60" class="logo" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0px";
+        console.log("avaa menu");
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-202px";
+        console.log("sulje menu");
+      }
+    </script>
+  </body>
+</html>
